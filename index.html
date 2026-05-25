@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPS INPUT JUDUL TUBES TT-49-INT</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- MathJax for rendering equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/dist/solid.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            900: '#14532d',
+                        },
+                        accent: {
+                            50: '#f0f9ff',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+            100% { transform: scale(0.95); opacity: 0.5; }
+        }
+        .fence-spark {
+            animation: pulse-ring 1.5s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <!-- TOP HEADER / HERO BANNER -->
+    <header class="bg-gradient-to-r from-emerald-950 via-slate-900 to-cyan-950 text-white relative overflow-hidden shadow-xl border-b border-emerald-800/30">
+        <!-- Abstract Tech Background Grid Pattern -->
+        <div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-emerald-500 rounded-full blur-3xl opacity-20"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-cyan-500 rounded-full blur-3xl opacity-20"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14 relative z-10">
+            <div class="flex flex-col items-center text-center space-y-4">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 tracking-wider uppercase">
+                    SPS INPUT JUDUL TUBES TT-49-INT
+                </span>
+                
+                <h1 class="text-2xl md:text-4xl lg:text-5xl font-extrabold tracking-tight max-w-5xl leading-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-100 to-emerald-200">
+                    Rancang Bangun Prototipe Energy Harvesting Mikrohidro Berbasis Induksi Elektromagnetik dengan Akumulator Superkapasitor untuk Peternakan Terisolasi
+                </h1>
+                
+                <p class="text-slate-300 text-sm md:text-base max-w-3xl font-medium">
+                    Analisis Hubungan Tegangan Induksi Elektromagnetik (GGL), Laju Jatuh Bebas Aliran Air (GJB), Kecepatan Sudut Kincir, dan Efisiensi Akumulator Superkapasitor
+                </p>
+
+                <div class="flex flex-wrap justify-center gap-3 pt-4">
+                    <span class="px-4 py-1.5 bg-slate-800/80 rounded-lg text-xs md:text-sm font-semibold border border-slate-700 text-emerald-400">
+                        <i class="fa-solid fa-bolt mr-2"></i>Modul Utama: EM-2 (Induksi Elektromagnetik)
+                    </span>
+                    <span class="px-4 py-1.5 bg-slate-800/80 rounded-lg text-xs md:text-sm font-semibold border border-slate-700 text-cyan-400">
+                        <i class="fa-solid fa-arrows-spin mr-2"></i>Modul Pendamping: Momen Inersia & Rotasi
+                    </span>
+                    <span class="px-4 py-1.5 bg-slate-800/80 rounded-lg text-xs md:text-sm font-semibold border border-slate-700 text-yellow-400">
+                        <i class="fa-solid fa-battery-three-quarters mr-2"></i>Akumulator: Superkapasitor 12 Farad
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION TABS -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center md:justify-start space-x-1 md:space-x-8 py-2 overflow-x-auto custom-scrollbar">
+                <button onclick="switchTab('tab-simulasi')" id="btn-tab-simulasi" class="tab-btn active px-3 py-2 text-sm font-bold text-emerald-600 border-b-2 border-emerald-500 flex items-center gap-2 whitespace-nowrap">
+                    <i class="fa-solid fa-chart-line"></i> Dashboard & Simulasi GJB
+                </button>
+                <button onclick="switchTab('tab-penjelasan')" id="btn-tab-penjelasan" class="tab-btn px-3 py-2 text-sm font-medium text-slate-500 hover:text-slate-800 border-b-2 border-transparent hover:border-slate-300 flex items-center gap-2 whitespace-nowrap">
+                    <i class="fa-solid fa-circle-info"></i> Deskripsi Prototipe
+                </button>
+                <button onclick="switchTab('tab-modul')" id="btn-tab-modul" class="tab-btn px-3 py-2 text-sm font-medium text-slate-500 hover:text-slate-800 border-b-2 border-transparent hover:border-slate-300 flex items-center gap-2 whitespace-nowrap">
+                    <i class="fa-solid fa-book"></i> Integrasi Modul & GJB
+                </button>
+                <button onclick="switchTab('tab-spesifikasi')" id="btn-tab-spesifikasi" class="tab-btn px-3 py-2 text-sm font-medium text-slate-500 hover:text-slate-800 border-b-2 border-transparent hover:border-slate-300 flex items-center gap-2 whitespace-nowrap">
+                    <i class="fa-solid fa-gears"></i> Spesifikasi Alat
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        
+        <!-- ==================== TAB 1: DASHBOARD & SIMULASI INTERAKTIF ==================== -->
+        <section id="tab-simulasi" class="tab-content block space-y-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <!-- SIMULASI FISIK VISUAL (LEFT 7 COLUMNS) -->
+                <div class="lg:col-span-7 bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                                <span class="p-1.5 bg-emerald-100 text-emerald-700 rounded-md"><i class="fa-solid fa-circle-play"></i></span>
+                                Simulator Fisika GJB, Kincir & Superkapasitor
+                            </h2>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-100 text-blue-800 animate-pulse">
+                                Live Physics Engine
+                            </span>
+                        </div>
+                        <p class="text-slate-500 text-xs mb-6">
+                            Partikel air jatuh menuruti hukum Gerak Jatuh Bebas (GJB) dengan percepatan $g = 9.8 \text{ m/s}^2$. Tumbukan air memutar rotor magnet, menginduksi tegangan kumparan untuk mengisi daya akumulator superkapasitor yang menyuplai pagar listrik.
+                        </p>
+
+                        <!-- VISUAL GRAPHICS CONTAINER (HTML5 CANVAS FOR PHYSICS ANIMATIONS) -->
+                        <div class="relative bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 rounded-xl overflow-hidden h-[380px] border border-slate-800 shadow-inner">
+                            
+                            <!-- Physics & Effects Overlay Canvas -->
+                            <canvas id="physics-canvas" class="absolute inset-0 z-20 pointer-events-none"></canvas>
+
+                            <!-- Papan Informasi Pagar Ternak -->
+                            <div class="absolute top-4 right-4 bg-slate-950/95 border border-slate-800 rounded-lg p-3 text-center text-[10px] w-40 shadow-xl z-30">
+                                <span class="font-bold text-slate-400 block mb-1">MONITOR PAGAR LISTRIK</span>
+                                <div id="fence-status-box" class="py-1 rounded font-mono font-bold bg-black text-rose-500 border border-rose-500/30 transition-all duration-300">
+                                    NON-AKTIF
+                                </div>
+                                <div class="mt-2 text-slate-400 text-[9px] text-left space-y-1">
+                                    <div class="flex justify-between"><span>Tegangan:</span><span id="val-fence-voltage" class="text-white font-semibold font-mono">0.00 V</span></div>
+                                    <div class="flex justify-between"><span>Efek Shock:</span><span id="val-fence-spark" class="text-rose-400 font-semibold font-mono">Mati</span></div>
+                                </div>
+                            </div>
+
+                            <!-- Papan Informasi Superkapasitor -->
+                            <div class="absolute top-4 left-4 bg-slate-955/95 border border-slate-800 rounded-lg p-3 text-center text-[10px] w-44 shadow-xl z-30 bg-slate-950/90 text-white">
+                                <span class="font-bold text-cyan-400 block mb-1.5"><i class="fa-solid fa-battery-three-quarters mr-1"></i>SUPERKAPASITOR</span>
+                                <div class="w-full bg-slate-800 rounded-full h-2.5 mb-2 overflow-hidden border border-slate-700">
+                                    <div id="cap-charge-bar" class="bg-gradient-to-r from-cyan-500 to-emerald-500 h-2.5 w-0 transition-all duration-200"></div>
+                                </div>
+                                <div class="text-[9px] text-slate-300 text-left space-y-1 font-mono">
+                                    <div class="flex justify-between"><span>Kapasitansi:</span><span class="text-cyan-300">12.0 Farad</span></div>
+                                    <div class="flex justify-between"><span>Tegangan:</span><span id="val-cap-voltage" class="text-white font-bold">0.00 V</span></div>
+                                    <div class="flex justify-between"><span>Energi (E):</span><span id="val-cap-energy" class="text-emerald-300">0.00 J</span></div>
+                                </div>
+                            </div>
+
+                            <!-- ELEMEN KINCIR (SVG ROTATION) -->
+                            <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 flex flex-col items-center justify-center z-10 mt-6">
+                                <!-- Rotor Kincir Air -->
+                                <svg id="water-wheel" class="w-48 h-48 transition-transform ease-linear duration-100 origin-center" viewBox="0 0 100 100" style="transform: rotate(0deg);">
+                                    <!-- Poros Tengah -->
+                                    <circle cx="50" cy="50" r="10" fill="#475569" stroke="#1e293b" stroke-width="2"/>
+                                    <!-- Bilah-Bilah Kincir (8 Bilah) -->
+                                    <g stroke="#475569" stroke-width="2.5" fill="#64748b">
+                                        <path d="M50,10 L45,40 L55,40 Z" /> <!-- Atas -->
+                                        <path d="M50,90 L45,60 L55,60 Z" /> <!-- Bawah -->
+                                        <path d="M10,50 L40,45 L40,55 Z" /> <!-- Kiri -->
+                                        <path d="M90,50 L60,45 L60,55 Z" /> <!-- Kanan -->
+                                        <path d="M22,22 L43,43 L49,37 Z" /> <!-- Diagonal Kiri Atas -->
+                                        <path d="M78,78 L57,57 L51,63 Z" /> <!-- Diagonal Kanan Bawah -->
+                                        <path d="M22,78 L43,57 L37,51 Z" /> <!-- Diagonal Kiri Bawah -->
+                                        <path d="M78,22 L57,43 L63,49 Z" /> <!-- Diagonal Kanan Atas -->
+                                    </g>
+                                    <!-- Sendok Air di Ujung Bilah (Mangkuk Penampung GJB) -->
+                                    <path d="M 45 6 A 5 5 0 0 0 55 6 Z" fill="#38bdf8" stroke="#0284c7" />
+                                    <path d="M 45 94 A 5 5 0 0 1 55 94 Z" fill="#38bdf8" stroke="#0284c7" />
+                                    <path d="M 6 45 A 5 5 0 0 1 6 55 Z" fill="#38bdf8" stroke="#0284c7" transform="rotate(90 6 50)" />
+                                    <path d="M 94 45 A 5 5 0 0 0 94 55 Z" fill="#38bdf8" stroke="#0284c7" transform="rotate(90 94 50)" />
+
+                                    <!-- Magnet Permanen nempel di Kincir (Kiri N: Merah, Kanan S: Biru) -->
+                                    <rect x="42" y="26" width="16" height="8" rx="1.5" fill="#ef4444" /> <!-- Kutub Utara (Red) -->
+                                    <text x="50" y="32" fill="white" font-size="6" font-weight="bold" text-anchor="middle">N</text>
+                                    <rect x="42" y="66" width="16" height="8" rx="1.5" fill="#3b82f6" /> <!-- Kutub Selatan (Blue) -->
+                                    <text x="50" y="72" fill="white" font-size="6" font-weight="bold" text-anchor="middle">S</text>
+                                </svg>
+                            </div>
+
+                            <!-- Kumparan Tembaga Diam di Samping Kincir -->
+                            <div class="absolute left-1/2 ml-24 top-1/2 -translate-y-1/2 flex items-center gap-1 z-10">
+                                <div class="flex flex-col items-center bg-amber-950/40 border border-amber-500/40 p-2 rounded-lg backdrop-blur-sm">
+                                    <span class="text-[8px] font-bold text-amber-400">KUMPARAN INDUKSI</span>
+                                    <!-- Gulungan Tembaga -->
+                                    <div class="flex gap-0.5 my-1.5">
+                                        <div class="w-2.5 h-10 bg-amber-600 rounded-sm shadow-inner"></div>
+                                        <div class="w-2.5 h-10 bg-amber-700 rounded-sm shadow-inner"></div>
+                                        <div class="w-2.5 h-10 bg-amber-600 rounded-sm shadow-inner"></div>
+                                        <div class="w-2.5 h-10 bg-amber-700 rounded-sm shadow-inner"></div>
+                                    </div>
+                                    <span class="text-[7px] text-slate-300">N = 500 Lilitan</span>
+                                </div>
+                            </div>
+
+                            <!-- Model Pagar Kawat Simulasi (Di Area Bawah) -->
+                            <div class="absolute bottom-6 left-12 right-12 flex justify-between px-4 z-10">
+                                <div class="w-1.5 h-16 bg-slate-700 rounded-full relative">
+                                    <div class="absolute top-2 w-10 h-0.5 bg-slate-500"></div>
+                                    <div class="absolute top-10 w-10 h-0.5 bg-slate-500"></div>
+                                </div>
+                                <div class="flex-grow flex flex-col justify-around px-2 relative h-16">
+                                    <!-- Garis Batas Kawat Pagar Peternakan -->
+                                    <div id="fence-wire-1" class="h-[3px] bg-slate-600 w-full transition-all duration-300"></div>
+                                    <div id="fence-wire-2" class="h-[3px] bg-slate-600 w-full transition-all duration-300"></div>
+                                </div>
+                                <div class="w-1.5 h-16 bg-slate-700 rounded-full relative"></div>
+                            </div>
+
+                            <!-- Pipa Air Atas (Sumber GJB) -->
+                            <div class="absolute top-0 left-1/2 -translate-x-14 w-12 h-8 bg-slate-700 border-x border-b border-slate-600 rounded-b-md shadow-lg z-10 flex items-center justify-center">
+                                <span class="text-[8px] font-bold text-slate-300 font-mono">KERAN AIR</span>
+                            </div>
+                        </div>
+
+                        <!-- KONTROLLER SIMULASI -->
+                        <div class="mt-6 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-3">Atur Laju Aliran Air Uji (Memicu Gerak Jatuh Bebas):</label>
+                            <div class="grid grid-cols-4 gap-3">
+                                <button onclick="setFlowRate('mati')" id="btn-flow-mati" class="flow-btn px-3 py-2.5 rounded-lg text-xs font-bold border border-slate-200 bg-white text-rose-600 hover:bg-slate-100 flex flex-col items-center gap-1 transition-all">
+                                    <span class="text-sm">❌</span>
+                                    <span>Mati</span>
+                                </button>
+                                <button onclick="setFlowRate('kecil')" id="btn-flow-kecil" class="flow-btn px-3 py-2.5 rounded-lg text-xs font-bold border border-slate-200 bg-white text-slate-700 hover:bg-slate-100 flex flex-col items-center gap-1 transition-all">
+                                    <span class="text-sm">💧</span>
+                                    <span>Aliran Kecil</span>
+                                </button>
+                                <button onclick="setFlowRate('sedang')" id="btn-flow-sedang" class="flow-btn px-3 py-2.5 rounded-lg text-xs font-bold border border-slate-200 bg-white text-slate-700 hover:bg-slate-100 flex flex-col items-center gap-1 transition-all">
+                                    <span class="text-sm">💧💧</span>
+                                    <span>Aliran Sedang</span>
+                                </button>
+                                <button onclick="setFlowRate('besar')" id="btn-flow-besar" class="flow-btn px-3 py-2.5 rounded-lg text-xs font-bold border border-slate-200 bg-white text-slate-700 hover:bg-slate-100 flex flex-col items-center gap-1 transition-all">
+                                    <span class="text-sm">💧💧💧</span>
+                                    <span>Aliran Besar</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MULTIMETER OUTPUT -->
+                    <div class="mt-6 bg-slate-900 text-white p-4 rounded-xl border border-slate-800 font-mono flex flex-col sm:flex-row justify-between items-center gap-4">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2 bg-yellow-500 text-slate-950 rounded-lg">
+                                <i class="fa-solid fa-gauge-high text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-[10px] text-slate-400 uppercase font-bold tracking-wider">Multimeter Digital</div>
+                                <div class="text-xs text-slate-300">Pengukuran Tegangan DC Sistem</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="bg-slate-950 px-3 py-2 rounded-lg border border-slate-800 text-center min-w-[100px]">
+                                <span class="text-[8px] text-emerald-400 font-bold block">V (KUMPARAN)</span>
+                                <span id="v-meter-coils" class="text-lg font-bold tracking-wider text-white">0.00 V</span>
+                            </div>
+                            <div class="bg-slate-950 px-3 py-2 rounded-lg border border-slate-800 text-center min-w-[100px]">
+                                <span class="text-[8px] text-cyan-400 font-bold block">V (SUPER_CAP)</span>
+                                <span id="v-meter-cap" class="text-lg font-bold tracking-wider text-white">0.00 V</span>
+                            </div>
+                            <div class="bg-slate-950 px-3 py-2 rounded-lg border border-slate-800 text-center min-w-[100px]">
+                                <span class="text-[8px] text-yellow-400 font-bold block">V (PAGAR)</span>
+                                <span id="v-meter-fence" class="text-lg font-bold tracking-wider text-white">0.00 V</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KALKULATOR & LOG DATA (RIGHT 5 COLUMNS) -->
+                <div class="lg:col-span-5 space-y-6">
+                    <!-- CALCULATOR BOX -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                        <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2 mb-2">
+                            <span class="p-1.5 bg-cyan-100 text-cyan-700 rounded-md"><i class="fa-solid fa-calculator"></i></span>
+                            Kalkulator GJB & Superkapasitor
+                        </h3>
+                        <p class="text-slate-500 text-xs mb-4">
+                            Ubah variabel mekanis jatuh bebas dan kapasitas akumulator untuk memprediksi keluaran matematis dari hukum fisika terkait.
+                        </p>
+
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-600 mb-1">Kapasitansi Superkapasitor ($C$ - Farad)</label>
+                                <input type="number" id="calc-c" value="12" min="1" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs font-mono focus:ring-2 focus:ring-emerald-500 outline-none">
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 mb-1">Ketinggian Jatuh Air ($h$ - m)</label>
+                                    <input type="number" id="calc-h" value="0.45" step="0.05" min="0.1" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs font-mono focus:ring-2 focus:ring-emerald-500 outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 mb-1">Tegangan Target ($V$ - Volt)</label>
+                                    <input type="number" id="calc-v-volt" value="2.45" step="0.05" min="0" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs font-mono focus:ring-2 focus:ring-emerald-500 outline-none">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 mb-1">Jumlah Putaran ($n$)</label>
+                                    <input type="number" id="calc-n" value="10" min="1" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs font-mono focus:ring-2 focus:ring-emerald-500 outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-600 mb-1">Waktu Uji ($t$ - detik)</label>
+                                    <input type="number" id="calc-t" value="3.2" step="0.1" min="0.1" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs font-mono focus:ring-2 focus:ring-emerald-500 outline-none">
+                                </div>
+                            </div>
+
+                            <!-- LIVE INTERACTIVE FORMULA METRICS -->
+                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-200/60 space-y-2 font-mono text-xs">
+                                <div class="flex justify-between border-b border-slate-200/80 pb-1.5">
+                                    <span class="text-slate-500">Laju Air GJB ($v_t = \sqrt{2gh}$):</span>
+                                    <span id="res-v-gjb" class="font-bold text-slate-900">2.97 m/s</span>
+                                </div>
+                                <div class="flex justify-between border-b border-slate-200/80 pb-1.5">
+                                    <span class="text-slate-500">Frekuensi ($f = n/t$):</span>
+                                    <span id="res-freq" class="font-bold text-slate-900">3.13 Hz</span>
+                                </div>
+                                <div class="flex justify-between border-b border-slate-200/80 pb-1.5">
+                                    <span class="text-slate-500">Kec. Sudut ($\omega = 2\pi f$):</span>
+                                    <span id="res-omega" class="font-bold text-slate-900">19.63 rad/s</span>
+                                </div>
+                                <div class="flex justify-between text-emerald-700">
+                                    <span>Energi Simpan ($E = \frac{1}{2} C V^2$):</span>
+                                    <span id="res-energy" class="font-bold">36.01 Joule</span>
+                                </div>
+                            </div>
+
+                            <button onclick="saveCalculatedData()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 transition-colors shadow-sm shadow-emerald-600/20">
+                                <i class="fa-solid fa-circle-plus"></i> Tambahkan ke Log Eksperimen
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- LIVE LOG PREVIEW -->
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-sm font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2">
+                                <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-ping"></span>
+                                Catatan Riwayat Uji Coba
+                            </h3>
+                            <button onclick="clearLogData()" class="text-[10px] text-rose-500 font-bold hover:underline">
+                                Hapus Semua
+                            </button>
+                        </div>
+                        <div id="log-empty-state" class="text-center py-6 text-slate-400 text-xs">
+                            <i class="fa-solid fa-clipboard-list text-2xl mb-2 text-slate-300 block"></i>
+                            Belum ada riwayat uji coba yang disimpan. Gunakan tombol simpan di atas.
+                        </div>
+                        <div id="log-list" class="space-y-2 max-h-[160px] overflow-y-auto custom-scrollbar hidden">
+                            <!-- Dynamic items populated via JS -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- TABEL MATRIKS DATA UTAMA -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                            <span class="p-1.5 bg-emerald-100 text-emerald-700 rounded-md"><i class="fa-solid fa-table"></i></span>
+                            Matriks Data Hasil Eksperimen Praktikum
+                        </h3>
+                        <p class="text-slate-500 text-xs">
+                            Kompilasi data yang diperoleh dari hasil pengukuran kincir generator induksi listrik dengan akumulator superkapasitor.
+                        </p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button onclick="resetToDefaultData()" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-lg transition-colors border border-slate-200 flex items-center gap-1.5">
+                            <i class="fa-solid fa-arrows-rotate"></i> Gunakan Data Default
+                        </button>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto custom-scrollbar border border-slate-200 rounded-xl">
+                    <table class="w-full text-left border-collapse text-xs">
+                        <thead>
+                            <tr class="bg-slate-50 border-b border-slate-200 text-slate-600 font-bold">
+                                <th class="p-3">Variasi Air</th>
+                                <th class="p-3">Waktu (s)</th>
+                                <th class="p-3">Putaran (n)</th>
+                                <th class="p-3">Laju GJB ($v_t$ m/s)</th>
+                                <th class="p-3">Frekuensi f (Hz)</th>
+                                <th class="p-3">Kec. Sudut &omega; (rad/s)</th>
+                                <th class="p-3 text-emerald-700 bg-emerald-50/50">V Kumparan (V)</th>
+                                <th class="p-3 text-cyan-700 bg-cyan-50/50">V Super_cap (V)</th>
+                                <th class="p-3 text-yellow-700 bg-yellow-50/50">Energi Simpan (J)</th>
+                                <th class="p-3 text-center">Kejutan Pagar</th>
+                            </tr>
+                        </thead>
+                        <tbody id="matrix-table-body" class="divide-y divide-slate-100 font-mono">
+                            <!-- Dynamic populated row -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAB 2: PENJELASAN SINGKAT PROTOTIPE ==================== -->
+        <section id="tab-penjelasan" class="tab-content hidden space-y-8">
+            <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200 space-y-8">
+                <div>
+                    <h2 class="text-2xl font-extrabold text-slate-900 border-b border-slate-100 pb-4 flex items-center gap-3">
+                        <span class="p-2 bg-emerald-100 text-emerald-700 rounded-xl"><i class="fa-solid fa-circle-nodes"></i></span>
+                        Konsep & Cara Kerja Prototipe
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-4">
+                        <h3 class="text-lg font-bold text-slate-800">Prinsip Kerja Generator & Akumulator</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Prototipe ini berupa generator kincir air mini yang dibuat sebagai simulasi sumber tegangan ramah lingkungan untuk pagar listrik rendah daya pada kandang ternak terpencil. Alat ini memanfaatkan aliran air jatuh bebas untuk memutar bilah kincir. 
+                        </p>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Saat kincir berputar, magnet permanen ikut bergerak melewati kumparan kawat tembaga enamel. Gerakan magnet ini membuat fluks medan magnet di sekitar kumparan berubah secara periodik, menghasilkan tegangan listrik induksi AC (GGL Induksi). Tegangan ini disearahkan ke sirkuit pengisi daya untuk disimpan di dalam **akumulator superkapasitor 12 F**.
+                        </p>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Superkapasitor memiliki densitas daya tinggi dan waktu pengisian cepat, sehingga ideal sebagai penyimpan daya instan. Superkapasitor inilah yang menyalurkan tegangan stabil ke pagar listrik untuk menghasilkan getaran kejut (*electrostatic shock pulse*) pengaman ternak.
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 space-y-4">
+                        <h4 class="font-bold text-sm text-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-gears text-emerald-500"></i> Alur Fisika Dinamis:
+                        </h4>
+                        <ol class="space-y-3 text-xs text-slate-600 font-medium list-decimal list-inside">
+                            <li><strong>Gerak Jatuh Bebas (GJB):</strong> Air dijatuhkan secara vertikal dari keran dengan ketinggian tertentu tanpa kecepatan awal ($v_0 = 0$) dan berakselerasi ke bawah sesuai gravitasi bumi.</li>
+                            <li><strong>Tumbukan Mekanis:</strong> Kecepatan tumbukan air memutar rotor kincir, menghasilkan momen inersia dan kecepatan rotasi sudut tertentu.</li>
+                            <li><strong>Fluks Magnetik Berubah:</strong> Magnet rotor melintasi kumparan tembaga diam untuk memicu timbulnya GGL induksi sesuai Hukum Faraday-Lenz.</li>
+                            <li><strong>Penyimpanan Akumulator:</strong> Listrik AC yang dibangkitkan disearahkan menjadi DC untuk mengisi superkapasitor secara stabil.</li>
+                            <li><strong>Transmisi Pagar Listrik:</strong> Pagar kawat menerima suplai listrik dari superkapasitor untuk mencegah hewan predator mendekati kandang melalui kejutan tegangan rendah daya.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- INFO CARDS -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 pt-4">
+                    <div class="p-5 bg-gradient-to-br from-emerald-50 to-white rounded-xl border border-emerald-100">
+                        <span class="text-2xl mb-2 block">💧</span>
+                        <h4 class="font-bold text-slate-800 text-sm mb-1">GJB Air</h4>
+                        <p class="text-slate-500 text-xs leading-relaxed">Laju air saat mengenai kincir ditentukan oleh percepatan gravitasi bumi $v = \sqrt{2gh}$.</p>
+                    </div>
+                    <div class="p-5 bg-gradient-to-br from-cyan-50 to-white rounded-xl border border-cyan-100">
+                        <span class="text-2xl mb-2 block">⚡</span>
+                        <h4 class="font-bold text-slate-800 text-sm mb-1">Hukum Faraday</h4>
+                        <p class="text-slate-500 text-xs leading-relaxed">Tegangan induksi pada kumparan berbanding lurus dengan laju perubahan fluks magnetik.</p>
+                    </div>
+                    <div class="p-5 bg-gradient-to-br from-blue-50 to-white rounded-xl border border-blue-100">
+                        <span class="text-2xl mb-2 block">🔋</span>
+                        <h4 class="font-bold text-slate-800 text-sm mb-1">Superkapasitor</h4>
+                        <p class="text-slate-500 text-xs leading-relaxed">Akumulator efisiensi tinggi penyimpan energi medan elektrostatis $E = \frac{1}{2}CV^2$.</p>
+                    </div>
+                    <div class="p-5 bg-gradient-to-br from-yellow-50 to-white rounded-xl border border-yellow-100">
+                        <span class="text-2xl mb-2 block">🏡</span>
+                        <h4 class="font-bold text-slate-800 text-sm mb-1">Kejutan Pagar</h4>
+                        <p class="text-slate-500 text-xs leading-relaxed">Menghasilkan kilatan tegangan impulsif berdenyut untuk pengamanan pagar ternak terisolasi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAB 3: INTEGRASI MODUL PRAKTIKUM & GJB ==================== -->
+        <section id="tab-modul" class="tab-content hidden space-y-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- GJB PANEL -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-4">
+                    <div class="flex items-center gap-3 border-b border-slate-100 pb-3">
+                        <span class="p-2 bg-blue-100 text-blue-700 rounded-xl"><i class="fa-solid fa-cloud-showers-water text-lg"></i></span>
+                        <div>
+                            <span class="text-[9px] uppercase font-bold text-blue-600 tracking-wider">Mekanika</span>
+                            <h3 class="text-sm font-bold text-slate-900">Gerak Jatuh Bebas (GJB)</h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Air yang mengalir dari tangki atas jatuh ke bilah kincir air di bawah tanpa kecepatan awal ($v_0 = 0$). Laju linear tumbukan air sangat dipengaruhi oleh gravitasi dan ketinggian jatuh pipa.
+                    </p>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 font-mono text-[11px] text-blue-800">
+                        <div class="text-center font-bold mb-1">Persamaan GJB:</div>
+                        $$ v_t = \sqrt{2gh} $$
+                        $$ y = \frac{1}{2}gt^2 $$
+                        <p class="text-[9px] text-slate-500 mt-2 font-sans">
+                            Keterangan: $v_t$ = Kecepatan jatuh (m/s), $g$ = gravitasi ($9.8 \text{ m/s}^2$), $h$ = tinggi jatuh air (m).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- MODUL UTAMA -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-4">
+                    <div class="flex items-center gap-3 border-b border-slate-100 pb-3">
+                        <span class="p-2 bg-emerald-100 text-emerald-700 rounded-xl"><i class="fa-solid fa-magnet text-lg"></i></span>
+                        <div>
+                            <span class="text-[9px] uppercase font-bold text-emerald-600 tracking-wider">Modul Utama</span>
+                            <h3 class="text-sm font-bold text-slate-900">Elektromagnetika / EM 2</h3>
+                        </div>
+                    </div>
+                    
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Saat magnet pada kincir berputar melewati kumparan kawat tembaga enamel, fluks magnet berubah terus menerus. Perubahan fluks magnetik ini membangkitkan GGL induksi di ujung kumparan.
+                    </p>
+
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 font-mono text-[11px] text-emerald-800">
+                        <div class="text-center font-bold mb-1">Hukum Faraday-Lenz:</div>
+                        $$ \epsilon = - N \frac{\Delta \Phi_B}{\Delta t} $$
+                        <p class="text-[9px] text-slate-500 mt-2 font-sans">
+                            Keterangan: $\epsilon$ = GGL induksi (Volt), $N$ = jumlah lilitan kawat (500 lilitan), dan $\Delta \Phi_B/\Delta t$ = laju perubahan fluks magnetik.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- MODUL PENDAMPING -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-4">
+                    <div class="flex items-center gap-3 border-b border-slate-100 pb-3">
+                        <span class="p-2 bg-cyan-100 text-cyan-700 rounded-xl"><i class="fa-solid fa-arrows-spin text-lg"></i></span>
+                        <div>
+                            <span class="text-[9px] uppercase font-bold text-cyan-600 tracking-wider">Modul Pendamping</span>
+                            <h3 class="text-sm font-bold text-slate-900">Momen Inersia & Rotasi</h3>
+                        </div>
+                    </div>
+
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Kincir air memiliki massa dan geometri jari-jari tertentu, membentuk momen inersia ($I$). Saat air menabrak bilah kincir, rotasi kincir dihitung berdasarkan periode, frekuensi, dan kecepatan sudut putar kincir.
+                    </p>
+
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 font-mono text-[11px] text-cyan-800">
+                        <div class="text-center font-bold mb-1">Persamaan Dinamika Rotasi:</div>
+                        $$ T = \frac{t}{n},\quad f = \frac{n}{t} $$
+                        $$ \omega = 2\pi f $$
+                        <p class="text-[9px] text-slate-500 mt-2 font-sans">
+                            Keterangan: $T$ = Periode (s), $f$ = Frekuensi (Hz), $\omega$ = Kecepatan sudut kincir (rad/s).
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SUPERKAPASITOR MODULE DETAIL -->
+            <div class="bg-gradient-to-r from-cyan-900 to-emerald-900 text-white rounded-2xl p-6 md:p-8 shadow-md">
+                <div class="flex flex-col md:flex-row gap-6 items-center">
+                    <div class="text-5xl">🔋</div>
+                    <div class="space-y-2 flex-grow">
+                        <h4 class="text-lg font-bold">Modul Penyimpanan Energi: Superkapasitor sebagai Akumulator</h4>
+                        <p class="text-xs text-slate-200 leading-relaxed max-w-4xl">
+                            Superkapasitor digunakan sebagai akumulator elektrokimia berkapasitas besar ($C = 12\text{ Farad}$) untuk menyaring riak tegangan AC dari generator induksi dan menyimpannya dalam bentuk energi medan listrik statis. Energi tersimpan ($E$) dihitung dengan rumus:
+                        </p>
+                        <div class="inline-block px-4 py-2 bg-black/30 border border-white/10 rounded font-mono text-xs text-cyan-300">
+                            $$ E = \frac{1}{2} C V^2 $$
+                        </div>
+                        <p class="text-[11px] text-slate-300">
+                            Berkat superkapasitor ini, ketika aliran air melemah atau terhenti sesaat, pagar listrik kandang ternak **tidak langsung mati**. Superkapasitor melepaskan muatannya secara berkala (*discharge*) agar pagar kawat tetap dialiri arus kejutan listrik pengaman.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAB 4: SPESIFIKASI ALAT ==================== -->
+        <section id="tab-spesifikasi" class="tab-content hidden space-y-8">
+            <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200">
+                <h3 class="text-xl font-bold text-slate-900 border-b border-slate-100 pb-4 mb-6 flex items-center gap-3">
+                    <span class="p-2 bg-slate-100 text-slate-700 rounded-xl"><i class="fa-solid fa-list-check"></i></span>
+                    Spesifikasi Komponen & Rangka Prototipe
+                </h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- COMPONENT 1 -->
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/60 flex gap-3">
+                        <div class="text-2xl">🪣</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-800">1. Wadah Air</h4>
+                            <p class="text-[11px] text-slate-500 leading-relaxed mt-1">Bak sirkulasi penampung air untuk mensimulasikan sistem mikrohidro tertutup.</p>
+                        </div>
+                    </div>
+
+                    <!-- COMPONENT 2 -->
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/60 flex gap-3">
+                        <div class="text-2xl">🔌</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-800">2. Pompa Air Mini</h4>
+                            <p class="text-[11px] text-slate-500 leading-relaxed mt-1">Mengalirkan air ke tangki atas untuk dijatuhkan kembali dengan prinsip GJB.</p>
+                        </div>
+                    </div>
+
+                    <!-- COMPONENT 3 -->
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/60 flex gap-3">
+                        <div class="text-2xl">🎡</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-800">3. Kincir Air Mini</h4>
+                            <p class="text-[11px] text-slate-500 leading-relaxed mt-1">Bilah rotor mekanis yang menangkap energi tumbukan air jatuh bebas.</p>
+                        </div>
+                    </div>
+
+                    <!-- COMPONENT 4 -->
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/60 flex gap-3">
+                        <div class="text-2xl">⚙️</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-800">4. Poros Kincir</h4>
+                            <p class="text-[11px] text-slate-500 leading-relaxed mt-1">Sumbu gesek rendah penopang putaran roda magnet generator.</p>
+                        </div>
+                    </div>
+
+                    <!-- COMPONENT 5 -->
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/60 flex gap-3">
+                        <div class="text-2xl">🧲</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-800">5. Magnet Permanen Neodymium</h4>
+                            <p class="text-[11px] text-slate-500 leading-relaxed mt-1">Dipasang pada rotor kincir untuk membangkitkan fluks magnet sinusoidal.</p>
+                        </div>
+                    </div>
+
+                    <!-- COMPONENT 6 -->
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/60 flex gap-3">
+                        <div class="text-2xl">🌀</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-800">6. Kumparan Kawat Tembaga</h4>
+                            <p class="text-[11px] text-slate-500 leading-relaxed mt-1">Kumparan $N = 500$ lilitan sebagai sensor GGL induksi elektromagnetik.</p>
+                        </div>
+                    </div>
+
+                    <!-- COMPONENT 7 -->
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/60 flex gap-3">
+                        <div class="text-2xl">🔋</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-800">7. Superkapasitor (12 Farad)</h4>
+                            <p class="text-[11px] text-slate-500 leading-relaxed mt-1">Kapasitor penyimpan daya instan berkapasitas tinggi untuk akumulasi energi sirkuit.</p>
+                        </div>
+                    </div>
+
+                    <!-- COMPONENT 8 -->
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/60 flex gap-3">
+                        <div class="text-2xl">🚧</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-800">8. Model Pagar Listrik</h4>
+                            <p class="text-[11px] text-slate-500 leading-relaxed mt-1">Kawat tembaga simulator pagar peternakan dengan indikator kejutan busur listrik.</p>
+                        </div>
+                    </div>
+
+                    <!-- COMPONENT 9 -->
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200/60 flex gap-3">
+                        <div class="text-2xl">📟</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-slate-800">9. Multimeter Digital</h4>
+                            <p class="text-[11px] text-slate-500 leading-relaxed mt-1">Alat ukur tegangan generator, tegangan superkapasitor, dan pagar kawat.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER / GITHUB INSTRUCTIONS -->
+    <footer class="bg-slate-900 text-slate-400 text-xs py-8 border-t border-slate-800 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex items-center gap-3">
+                    <div class="p-2 bg-slate-800 text-emerald-400 rounded-lg">
+                        <i class="fa-solid fa-code-branch text-sm"></i>
+                    </div>
+                    <div>
+                        <span class="text-[9px] font-bold block uppercase tracking-wider text-slate-500">TUGAS BESAR FISIKA</span>
+                        <span class="text-white font-semibold">SPS INPUT JUDUL TUBES TT-49-INT</span>
+                    </div>
+                </div>
+                <div class="text-center md:text-right">
+                    <p>&copy; 2026 Tugas Besar Fisika Dasar. All rights reserved.</p>
+                    <p class="text-[10px] text-slate-500 mt-1">Rancang Bangun Generator Kincir Air berbasis Induksi Elektromagnetik</p>
+                </div>
+            </div>
+
+            <!-- GitHub Deploy Helper Box -->
+            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800/80 mt-4 space-y-2">
+                <span class="font-bold text-slate-300 text-xs block"><i class="fa-brands fa-github text-emerald-400 mr-1.5"></i> Cara Mengunggah Website Ini ke GitHub Pages:</span>
+                <ol class="list-decimal list-inside text-[11px] text-slate-400 space-y-1">
+                    <li>Salin seluruh kode dari dokumen atau file ini dan simpan dengan nama <code class="bg-slate-900 text-emerald-400 px-1 rounded font-mono">index.html</code> di komputer Anda.</li>
+                    <li>Buat sebuah repositori baru di akun GitHub Anda (misal: <code class="bg-slate-900 text-slate-300 px-1 rounded font-mono">tubes-fisika-tt49</code>).</li>
+                    <li>Unggah (upload) file <code class="bg-slate-900 text-slate-300 px-1 rounded font-mono">index.html</code> tersebut ke dalam repositori utama (main branch).</li>
+                    <li>Pergi ke menu **Settings** > **Pages** di repositori GitHub Anda, lalu aktifkan source deployment ke **Main Branch** / **root**.</li>
+                    <li>Setelah beberapa detik, tautan website portofolio interaktif Anda akan aktif secara langsung!</li>
+                </ol>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE ENGINE SCRIPT -->
+    <script>
+        // Preset / Default Data
+        const defaultData = [
+            { id: 1, flow: 'Aliran Kecil', t: 8.5, n: 10, h: 0.45, vCoil: 0.45, vCap: 0.38, energy: 0.86 },
+            { id: 2, flow: 'Aliran Sedang', t: 5.8, n: 10, h: 0.45, vCoil: 1.12, vCap: 1.02, energy: 6.24 },
+            { id: 3, flow: 'Aliran Besar', t: 3.2, n: 10, h: 0.45, vCoil: 2.45, vCap: 2.30, energy: 31.74 }
+        ];
+
+        let savedLogs = [];
+        let currentRotationAngle = 0;
+        let animationFrameId = null;
+        let currentSpeed = 0; // Rotations per second
+        let currentFlowStatus = 'mati'; // mati, kecil, sedang, besar
+
+        // Supercapacitor State
+        let capacitorC = 12.0; // Farad
+        let capacitorV = 0.0;  // Volts
+        let currentCoilV = 0.0; // Volts generated
+
+        // Physics Particle Animation (GJB & Spark Particles)
+        let canvas, ctx;
+        let waterParticles = [];
+        let sparks = [];
+
+        window.onload = function() {
+            canvas = document.getElementById('physics-canvas');
+            ctx = canvas.getContext('2d');
+            resizeCanvas();
+
+            window.addEventListener('resize', resizeCanvas);
+
+            resetToDefaultData();
+            initCalculatorAutoBind();
+            runSimulationLoop();
+        };
+
+        function resizeCanvas() {
+            const rect = canvas.parentNode.getBoundingClientRect();
+            canvas.width = rect.width;
+            canvas.height = rect.height;
+        }
+
+        // Navigation Tabs controller
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active', 'text-emerald-600', 'border-emerald-500');
+                btn.classList.add('text-slate-500', 'border-transparent');
+            });
+
+            document.getElementById(tabId).classList.remove('hidden');
+            const activeBtn = document.getElementById('btn-' + tabId);
+            activeBtn.classList.add('active', 'text-emerald-600', 'border-emerald-500');
+            activeBtn.classList.remove('text-slate-500', 'border-transparent');
+        }
+
+        // Set Flow Rate for Visual Simulation & GJB physics
+        function setFlowRate(rate) {
+            currentFlowStatus = rate;
+            
+            // UI Button Active style
+            document.querySelectorAll('.flow-btn').forEach(btn => {
+                btn.classList.remove('bg-emerald-600', 'text-white', 'border-emerald-600', 'bg-cyan-600', 'bg-blue-600', 'bg-rose-600');
+                btn.classList.add('bg-white', 'text-slate-700', 'border-slate-200');
+            });
+
+            if (rate === 'mati') {
+                currentSpeed = 0;
+                currentCoilV = 0.0;
+                document.getElementById('btn-flow-mati').classList.add('bg-rose-600', 'text-white', 'border-rose-600');
+            } else if (rate === 'kecil') {
+                currentSpeed = 1.1; // Sesuai data default
+                currentCoilV = 0.45;
+                document.getElementById('btn-flow-kecil').classList.add('bg-cyan-600', 'text-white', 'border-cyan-600');
+            } else if (rate === 'sedang') {
+                currentSpeed = 1.9; // Sesuai data default
+                currentCoilV = 1.12;
+                document.getElementById('btn-flow-sedang').classList.add('bg-emerald-600', 'text-white', 'border-emerald-600');
+            } else if (rate === 'besar') {
+                currentSpeed = 3.2; // Sesuai data default
+                currentCoilV = 2.45;
+                document.getElementById('btn-flow-besar').classList.add('bg-blue-600', 'text-white', 'border-blue-600');
+            }
+        }
+
+        // Simulation Loop
+        function runSimulationLoop() {
+            let lastTime = performance.now();
+
+            function update(time) {
+                let delta = (time - lastTime) / 1000;
+                lastTime = time;
+
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                // --- 1. PROSES GJB AIR (PARTIKEL) ---
+                if (currentFlowStatus !== 'mati') {
+                    // Spawn rate based on flow rate
+                    let spawnProb = currentFlowStatus === 'kecil' ? 0.3 : (currentFlowStatus === 'sedang' ? 0.6 : 0.9);
+                    if (Math.random() < spawnProb) {
+                        waterParticles.push({
+                            x: canvas.width / 2 - 50 + (Math.random() * 10 - 5), // posisi di bawah keran
+                            y: 32, // y-awal keran
+                            vY: 0,  // v0 = 0 (GJB)
+                            g: 220, // Percepatan gravitasi piksel (skala simulasi)
+                            t: 0
+                        });
+                    }
+                }
+
+                // Update & Render GJB Water Particles
+                for (let i = waterParticles.length - 1; i >= 0; i--) {
+                    let p = waterParticles[i];
+                    p.t += delta;
+                    // Persamaan GJB: y = y0 + 0.5 * g * t^2
+                    p.y = 32 + 0.5 * p.g * Math.pow(p.t, 2);
+                    // Kecepatan GJB: v_y = g * t
+                    p.vY = p.g * p.t;
+
+                    // Draw water drop
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, 3, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(56, 189, 248, ${Math.max(0, 1 - (p.y / canvas.height))})`;
+                    ctx.fill();
+
+                    // Tumbukan dengan kincir air (sekitar tengah canvas)
+                    if (p.y > canvas.height / 2 - 40 && p.y < canvas.height / 2) {
+                        // Splatters effect
+                        if (Math.random() < 0.2) {
+                            for(let s = 0; s < 3; s++) {
+                                sparks.push({
+                                    x: p.x,
+                                    y: p.y,
+                                    vX: (Math.random() - 0.5) * 80,
+                                    vY: (Math.random() - 0.3) * -60,
+                                    life: 0.4,
+                                    maxLife: 0.4,
+                                    color: 'rgba(56, 189, 248, 0.8)'
+                                });
+                            }
+                        }
+                    }
+
+                    // Hapus jika keluar batas
+                    if (p.y > canvas.height - 110) {
+                        waterParticles.splice(i, 1);
+                    }
+                }
+
+                // --- 2. HUKUM ROTASI KINCIR ---
+                if (currentSpeed > 0) {
+                    currentRotationAngle += currentSpeed * 360 * delta;
+                    if (currentRotationAngle >= 360) {
+                        currentRotationAngle -= 360;
+                    }
+                    const wheel = document.getElementById('water-wheel');
+                    if (wheel) {
+                        wheel.style.transform = `rotate(${currentRotationAngle}deg)`;
+                    }
+                }
+
+                // --- 3. AKUMULATOR SUPERKAPASITOR & REKTIFIKASI ---
+                // Pengisian daya superkapasitor (Charging): V_cap meningkat mendekati V_coil
+                if (currentCoilV > 0) {
+                    // Kecepatan charging proporsional terhadap selisih tegangan
+                    let chargingRate = 0.25 * delta; // Koefisien waktu sirkuit RC
+                    capacitorV += (currentCoilV - capacitorV) * chargingRate;
+                } else {
+                    // Pengosongan daya (Discharging) oleh beban pagar kawat ketika air mati
+                    let dischargingRate = 0.05 * delta; 
+                    capacitorV -= capacitorV * dischargingRate;
+                    if (capacitorV < 0.01) capacitorV = 0.0;
+                }
+
+                // Update UI Superkapasitor & Multimeter
+                let energyCap = 0.5 * capacitorC * Math.pow(capacitorV, 2); // E = 0.5 * C * V^2
+                document.getElementById('val-cap-voltage').innerText = capacitorV.toFixed(2) + " V";
+                document.getElementById('val-cap-energy').innerText = energyCap.toFixed(2) + " J";
+                
+                // Kapasitansi bar (maksimal 2.5V skala visual)
+                let capPercent = Math.min(100, (capacitorV / 2.5) * 100);
+                document.getElementById('cap-charge-bar').style.width = capPercent + "%";
+
+                document.getElementById('v-meter-coils').innerText = currentCoilV.toFixed(2) + " V";
+                document.getElementById('v-meter-cap').innerText = capacitorV.toFixed(2) + " V";
+                
+                // Tegangan yang disuplai ke pagar kawat
+                let fenceVoltage = capacitorV * 0.95; // Rugi-rugi resistansi kawat
+                document.getElementById('v-meter-fence').innerText = fenceVoltage.toFixed(2) + " V";
+                document.getElementById('val-fence-voltage').innerText = fenceVoltage.toFixed(2) + " V";
+
+                // --- 4. EFEK KEJUTAN LISTRIK PAGAR ---
+                const fenceStatusBox = document.getElementById('fence-status-box');
+                const wire1 = document.getElementById('fence-wire-1');
+                const wire2 = document.getElementById('fence-wire-2');
+
+                if (fenceVoltage > 0.1) {
+                    // Update Papan Status
+                    if (fenceVoltage >= 2.0) {
+                        fenceStatusBox.className = "py-1 rounded font-mono font-bold bg-black text-yellow-400 border border-yellow-500/50";
+                        fenceStatusBox.innerText = "⚡ BAHAYA MAKSIMAL";
+                        document.getElementById('val-fence-spark').innerText = "Tinggi";
+                        wire1.className = "h-[3px] bg-yellow-400 shadow-[0_0_8px_rgba(234,179,8,0.8)] w-full transition-all";
+                        wire2.className = "h-[3px] bg-yellow-400 shadow-[0_0_8px_rgba(234,179,8,0.8)] w-full transition-all";
+                    } else if (fenceVoltage >= 0.8) {
+                        fenceStatusBox.className = "py-1 rounded font-mono font-bold bg-black text-emerald-400 border border-emerald-500/30";
+                        fenceStatusBox.innerText = "⚡ AKTIF - NORMAL";
+                        document.getElementById('val-fence-spark').innerText = "Sedang";
+                        wire1.className = "h-[3px] bg-emerald-400 shadow-[0_0_6px_rgba(34,197,94,0.6)] w-full transition-all";
+                        wire2.className = "h-[3px] bg-emerald-400 shadow-[0_0_6px_rgba(34,197,94,0.6)] w-full transition-all";
+                    } else {
+                        fenceStatusBox.className = "py-1 rounded font-mono font-bold bg-black text-cyan-400 border border-cyan-500/30";
+                        fenceStatusBox.innerText = "⚡ AKTIF - RENDAH";
+                        document.getElementById('val-fence-spark').innerText = "Lemah";
+                        wire1.className = "h-[3px] bg-cyan-400 shadow-[0_0_4px_rgba(6,182,212,0.4)] w-full transition-all";
+                        wire2.className = "h-[3px] bg-cyan-400 shadow-[0_0_4px_rgba(6,182,212,0.4)] w-full transition-all";
+                    }
+
+                    // Generate Sparks / Arcs pada kawat kawat kincir kawat
+                    let sparkChance = fenceVoltage / 3; // Peluang spark meningkat seiring tegangan
+                    if (Math.random() < sparkChance) {
+                        // Posisi acak sepanjang pagar kawat bawah
+                        let sparkX = 48 + Math.random() * (canvas.width - 96);
+                        let sparkY = canvas.height - 62 + (Math.random() < 0.5 ? 0 : 25); // Atur di kawat 1 atau kawat 2
+                        
+                        // Buat beberapa partikel busur listrik petir mini
+                        for(let k = 0; k < 4; k++) {
+                            sparks.push({
+                                x: sparkX,
+                                y: sparkY,
+                                vX: (Math.random() - 0.5) * 120,
+                                vY: (Math.random() - 0.5) * 120,
+                                life: 0.3,
+                                maxLife: 0.3,
+                                color: fenceVoltage >= 2.0 ? 'rgba(253, 224, 71, 0.95)' : 'rgba(34, 211, 238, 0.95)' // Kuning atau Cyan
+                            });
+                        }
+
+                        // Efek gambar busur petir sambung (lightning arc) ke tanah simulasi
+                        ctx.beginPath();
+                        ctx.moveTo(sparkX, sparkY);
+                        ctx.lineTo(sparkX + (Math.random() * 10 - 5), sparkY + 12);
+                        ctx.lineTo(sparkX + (Math.random() * 16 - 8), sparkY + 24);
+                        ctx.strokeStyle = fenceVoltage >= 2.0 ? '#fde047' : '#22d3ee';
+                        ctx.lineWidth = 2;
+                        ctx.shadowBlur = 10;
+                        ctx.shadowColor = fenceVoltage >= 2.0 ? '#fde047' : '#22d3ee';
+                        ctx.stroke();
+                        ctx.shadowBlur = 0; // reset shadow
+                    }
+                } else {
+                    fenceStatusBox.className = "py-1 rounded font-mono font-bold bg-black text-rose-500 border border-rose-500/30";
+                    fenceStatusBox.innerText = "NON-AKTIF";
+                    document.getElementById('val-fence-spark').innerText = "Mati";
+                    wire1.className = "h-[3px] bg-slate-600 w-full transition-all";
+                    wire2.className = "h-[3px] bg-slate-600 w-full transition-all";
+                }
+
+                // Update & Render Particle Sparks
+                for (let i = sparks.length - 1; i >= 0; i--) {
+                    let s = sparks[i];
+                    s.life -= delta;
+                    s.x += s.vX * delta;
+                    s.y += s.vY * delta;
+
+                    ctx.beginPath();
+                    ctx.arc(s.x, s.y, Math.random() * 2.5 + 0.5, 0, Math.PI * 2);
+                    ctx.fillStyle = s.color;
+                    ctx.fill();
+
+                    if (s.life <= 0) {
+                        sparks.splice(i, 1);
+                    }
+                }
+
+                animationFrameId = requestAnimationFrame(update);
+            }
+            animationFrameId = requestAnimationFrame(update);
+        }
+
+        // Math Calculations Auto Binding
+        function initCalculatorAutoBind() {
+            const keys = ['calc-c', 'calc-h', 'calc-v-volt', 'calc-n', 'calc-t'];
+            keys.forEach(id => {
+                document.getElementById(id).addEventListener('input', calculateTeoriticalMetrics);
+            });
+            calculateTeoriticalMetrics();
+        }
+
+        // Realtime Formulas Calculation
+        function calculateTeoriticalMetrics() {
+            const c = parseFloat(document.getElementById('calc-c').value) || 12;
+            const h = parseFloat(document.getElementById('calc-h').value) || 0.45;
+            const v = parseFloat(document.getElementById('calc-v-volt').value) || 0;
+            const n = parseFloat(document.getElementById('calc-n').value) || 10;
+            const t = parseFloat(document.getElementById('calc-t').value) || 3.2;
+            
+            // Gerak Jatuh Bebas (GJB) formula: v = sqrt(2 * g * h)
+            const g = 9.81;
+            const vGjb = Math.sqrt(2 * g * h);
+
+            // Rotasi
+            const frequency = n / t;
+            const omega = 2 * Math.PI * frequency;
+
+            // Superkapasitor Energy: E = 0.5 * C * V^2
+            const energy = 0.5 * c * Math.pow(v, 2);
+
+            document.getElementById('res-v-gjb').innerText = vGjb.toFixed(2) + " m/s";
+            document.getElementById('res-freq').innerText = frequency.toFixed(2) + " Hz";
+            document.getElementById('res-omega').innerText = omega.toFixed(2) + " rad/s";
+            document.getElementById('res-energy').innerText = energy.toFixed(2) + " Joule";
+        }
+
+        // Add calculated log to array
+        function saveCalculatedData() {
+            const flow = "Uji " + document.getElementById('calc-flow-option')?.value || "Aliran Kustom";
+            const c = parseFloat(document.getElementById('calc-c').value) || 12;
+            const h = parseFloat(document.getElementById('calc-h').value) || 0.45;
+            const v = parseFloat(document.getElementById('calc-v-volt').value) || 0;
+            const n = parseFloat(document.getElementById('calc-n').value) || 10;
+            const t = parseFloat(document.getElementById('calc-t').value) || 3.2;
+
+            const g = 9.81;
+            const vGjb = Math.sqrt(2 * g * h);
+            const freq = n / t;
+            const omega = 2 * Math.PI * freq;
+            const energy = 0.5 * c * Math.pow(v, 2);
+
+            const newLog = {
+                id: Date.now(),
+                flow: `${n} Putaran / ${h}m`,
+                t, n, h,
+                vGjb, freq, omega,
+                vCoil: v + 0.15, // Estimasi tegangan kumparan awal
+                vCap: v,
+                energy
+            };
+
+            savedLogs.unshift(newLog);
+            updateLogListView();
+            appendRowToMatrixTable(newLog);
+        }
+
+        // Render Dynamic Log List Panel
+        function updateLogListView() {
+            const listContainer = document.getElementById('log-list');
+            const emptyState = document.getElementById('log-empty-state');
+
+            if (savedLogs.length === 0) {
+                listContainer.classList.add('hidden');
+                emptyState.classList.remove('hidden');
+                return;
+            }
+
+            listContainer.classList.remove('hidden');
+            emptyState.classList.add('hidden');
+
+            listContainer.innerHTML = '';
+            savedLogs.forEach(log => {
+                const div = document.createElement('div');
+                div.className = "p-3 bg-slate-50 border border-slate-200/80 rounded-lg text-[11px] font-mono flex justify-between items-center animate-fade-in";
+                div.innerHTML = `
+                    <div>
+                        <span class="font-bold text-slate-900 block">${log.flow} (t=${log.t}s, n=${log.n})</span>
+                        <span class="text-slate-500">GJB: ${log.vGjb.toFixed(2)}m/s &bull; f=${log.freq.toFixed(2)}Hz</span>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-cyan-700 font-bold block">V_cap: ${log.vCap.toFixed(2)}V</span>
+                        <span class="text-amber-700 font-bold block">E: ${log.energy.toFixed(1)} J</span>
+                    </div>
+                `;
+                listContainer.appendChild(div);
+            });
+        }
+
+        // Add Data item row to Main Experiment Matrix Table
+        function appendRowToMatrixTable(item) {
+            const tbody = document.getElementById('matrix-table-body');
+            const tr = document.createElement('tr');
+            tr.className = "hover:bg-slate-50 transition-colors";
+            
+            const isHigh = item.vCap >= 2.0 ? 'bg-yellow-100 text-yellow-800' : (item.vCap >= 0.8 ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800');
+            const textStatus = item.vCap >= 2.0 ? 'MAKSIMAL' : (item.vCap >= 0.8 ? 'NORMAL' : 'RENDAH');
+
+            tr.innerHTML = `
+                <td class="p-3 font-semibold text-slate-800">${item.flow}</td>
+                <td class="p-3">${item.t.toFixed(1)}</td>
+                <td class="p-3">${item.n}</td>
+                <td class="p-3">${item.vGjb ? item.vGjb.toFixed(2) : Math.sqrt(2 * 9.81 * item.h).toFixed(2)}</td>
+                <td class="p-3">${item.freq ? item.freq.toFixed(2) : (item.n / item.t).toFixed(2)}</td>
+                <td class="p-3">${item.omega ? item.omega.toFixed(1) : (2 * Math.PI * (item.n / item.t)).toFixed(1)}</td>
+                <td class="p-3 text-emerald-700 bg-emerald-50/20 font-bold">${item.vCoil.toFixed(2)}</td>
+                <td class="p-3 text-cyan-700 bg-cyan-50/20 font-bold">${item.vCap.toFixed(2)}</td>
+                <td class="p-3 text-yellow-700 bg-yellow-50/20 font-bold">${item.energy.toFixed(2)}</td>
+                <td class="p-3 text-center">
+                    <span class="px-2 py-0.5 rounded text-[9px] font-bold ${isHigh}">${textStatus}</span>
+                </td>
+            `;
+            tbody.insertBefore(tr, tbody.firstChild);
+        }
+
+        // Reset to default data set
+        function resetToDefaultData() {
+            const tbody = document.getElementById('matrix-table-body');
+            tbody.innerHTML = '';
+            
+            defaultData.forEach(item => {
+                const freq = item.n / item.t;
+                const omega = 2 * Math.PI * freq;
+                const vGjb = Math.sqrt(2 * 9.81 * item.h);
+
+                appendRowToMatrixTable({
+                    ...item,
+                    vGjb, freq, omega
+                });
+            });
+
+            savedLogs = [];
+            updateLogListView();
+            setFlowRate('kecil');
+            capacitorV = 0.38; // Initial pre-charged state
+        }
+
+        // Clear dynamic logs
+        function clearLogData() {
+            savedLogs = [];
+            updateLogListView();
+        }
+    </script>
+</body>
+</html>
